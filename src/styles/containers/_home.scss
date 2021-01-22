@@ -1,0 +1,16 @@
+.home {
+    height: 100vh;
+    background: linear-gradient( to top, rgba(2,0,36,1) 0%, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__desktop-box {
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        width: 19rem;
+        left: 50%;
+        transform: translate(-58rem, -8rem);
+    }
+  
+}

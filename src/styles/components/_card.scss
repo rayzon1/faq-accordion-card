@@ -1,0 +1,62 @@
+.card {
+  @include centerfix;
+  @include subtleBoxShadow;
+  border-radius: 25px;
+  background-image: url(../../images/bg-pattern-desktop.svg);
+  background-color: white;
+  height: 53rem;
+  width: 95rem;
+  background-repeat: no-repeat;
+  background-position: -58rem -28rem;
+  overflow: hidden;
+
+  &__desktop-image-woman {
+    width: 48rem;
+    top: 6rem;
+    position: absolute;
+    height: 36rem;
+    right: 56rem;
+  }
+
+  &__desktop-section-container {
+      display: inline-flex;
+      width: 41rem;
+  } 
+
+  &__desktop-icon-arrow {
+    width: 2rem;
+    height: 1.5rem;
+    margin: 3rem 0rem 0rem 7rem;
+  }
+
+  &__desktop-faq {
+    @include borderbox;
+    position: absolute;
+    left: 42rem;
+    top: 1rem;
+    width: 52rem;
+    height: 51rem;
+    line-height: 2;
+    padding-left: 3rem;
+
+    &--title {
+      font-size: 4rem;
+    }
+
+    &--information {
+      font-size: 1.5rem;
+      margin: 2rem 0 2rem 0;
+    }
+
+    &--divider {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 1em 0;
+      padding: 0;
+      width: 79%;
+    }
+  }
+}
+

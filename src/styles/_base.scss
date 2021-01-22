@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Root font-size will be here as reference to all rem units.*/
+/* Percentage of default font-size. Usually would be 16px */
+html {
+  // Base definition for 1 rem.
+  font-size: 62.5%;
+
+  @include respond(tab-land) { // width < 1200 ?
+    font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
+  }
+  @include respond(tab-port) { // width < 900 ?
+    font-size: 50%; // 1rem = 8px; 8/16 = 50%
+  }
+  @include respond(phone) { // width < 600 ?
+    font-size: 45%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px; 12/16 = 75%
+  }
+}
+
+/* body properties will be inherited by all other body
+   elements, padding will only go around the body element.*/
+body {
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark-1;
+  // padding: 3rem;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // background: rgb(2,0,36);
+  // background-repeat:no-repeat;
+  // background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 85%);
+  // background-image: url('../images/bg-pattern-desktop.svg');
+  
+
+  
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+}
+
+::selection {
+  color: $color-white;
+}

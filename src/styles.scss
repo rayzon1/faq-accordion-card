@@ -1,0 +1,13 @@
+@import "styles/mixins";
+@import "styles/animations";
+@import "styles/variables";
+@import "styles/utilities";
+@import "styles/base";
+
+//COMPONENTS
+@import "styles/components/card";
+
+//CONTAINERS
+@import "styles/containers/app";
+@import "styles/containers/home";
+
