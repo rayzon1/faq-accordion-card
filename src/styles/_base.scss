@@ -34,6 +34,12 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: $color-grey-dark-1;
+  @font-face {
+    font-family: "KumbhSans";
+    src: local("KumbhSans"),
+      url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
   // padding: 3rem;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;

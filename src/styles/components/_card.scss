@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: -58rem -28rem;
   overflow: hidden;
+  font-family: 'KumbhSans';
 
   &__desktop-image-woman {
     width: 48rem;
@@ -19,18 +20,25 @@
   }
 
   &__desktop-section-container {
-      display: inline-flex;
-      width: 41rem;
-  } 
+    display: inline-flex;
+    width: 41rem;
+    justify-content: space-between;
+  }
 
   &__desktop-icon-arrow {
     width: 2rem;
     height: 1.5rem;
     margin: 3rem 0rem 0rem 7rem;
+
+    &--two{
+      transform: rotate(180deg);
+      height: 1.5rem;
+      margin: 2rem 0rem 0rem 0rem;
+    }
   }
 
   &__desktop-faq {
-    @include borderbox;
+    // @include borderbox;
     position: absolute;
     left: 42rem;
     top: 1rem;
@@ -44,7 +52,7 @@
     }
 
     &--information {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 2rem 0 2rem 0;
     }
 
@@ -59,4 +67,3 @@
     }
   }
 }
-
